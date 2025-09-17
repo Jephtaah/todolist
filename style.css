@@ -5,86 +5,87 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: #f5f5f5;
-}
-
 .container {
-  max-width: 600px;
-  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 0.7rem;
   padding: 2rem;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 2rem;
 }
 
 .todo-grid {
   display: flex;
+  align-items: center;
   gap: 10px;
-  margin-bottom: 2rem;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 .todo-container-flex {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid lightgray;
   padding: 1rem;
-  background-color: #fafafa;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 .todo-flex {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
-  margin-bottom: 8px;
-  background-color: white;
-  border-radius: 6px;
-  border: 1px solid #eee;
+  gap: 0.7rem;
+  min-width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.todo-flex:last-child {
+  border-bottom: none;
 }
 
 input {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  outline: none;
   flex: 1;
+  margin-right: 10px;
 }
 
 .add-button {
-  background-color: #4CAF50;
+  background-color: #0070f3;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
-  font-size: 16px;
-}
-
-.add-button:hover {
-  background-color: #45a049;
+  font-size: 1rem;
+  min-width: 100px;
 }
 
 .delete-button {
-  background-color: #f44336;
+  background-color: red;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   cursor: pointer;
-  font-size: 14px;
-}
-
-.delete-button:hover {
-  background-color: #d32f2f;
+  font-size: 1rem;
+  min-width: 100px;
 }
 
 .todo-flex p {
-  margin: 0 10px;
-  color: #333;
+  font-size: 1rem;
+  word-break: break-word;
+  min-width: 100px;
 }
