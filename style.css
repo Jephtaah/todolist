@@ -73,6 +73,12 @@ input {
   min-width: 100px;
 }
 
+.add-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .delete-button {
   background-color: red;
   color: white;
@@ -88,4 +94,25 @@ input {
   font-size: 1rem;
   word-break: break-word;
   min-width: 100px;
+}
+
+.delete-all-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.delete-all-button {
+  background-color: #dc143c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-width: 100px;
+}
+
+.delete-all-button:hover {
+  background-color: #b91c3c;
 }
